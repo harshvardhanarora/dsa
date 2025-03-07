@@ -1,4 +1,4 @@
-func isPalindrome(_ x: Int) -> Bool {
+func isPalindrome_1(_ x: Int) -> Bool {
     guard x >= 0 else {
         return false
     }
@@ -18,5 +18,13 @@ func isPalindrome(_ x: Int) -> Bool {
     return true
 }
 
+func isPalindrome_2(_ input: Int) -> Bool {
+    guard input >= 0 else {
+        return false
+    }
+
+    return input == input.reversed
+}
+
 let input = 34543
-print(isPalindrome(input))
+print(isPalindrome_2(input))
