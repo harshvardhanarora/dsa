@@ -1,3 +1,11 @@
+//
+//  LC-09-PalindromeNumber
+//
+//  Created by Harshvardhan Arora on 07/03/2025.
+//
+// https://leetcode.com/problems/palindrome-number/
+//
+
 func isPalindrome_1(_ x: Int) -> Bool {
     guard x >= 0 else {
         return false
@@ -18,12 +26,17 @@ func isPalindrome_1(_ x: Int) -> Bool {
     return true
 }
 
-func isPalindrome_2(_ input: Int) -> Bool {
-    guard input >= 0 else {
+// Most efficient way
+func isPalindrome_2(_ x: Int) -> Bool {
+    guard x >= 0 else {
         return false
     }
 
-    return input == input.reversed
+    return x == x.reversed
+}
+
+func isPalindrome_3(_ x: Int) -> Bool {
+    return String(x) == String(String(x).reversed())
 }
 
 let input = 34543
