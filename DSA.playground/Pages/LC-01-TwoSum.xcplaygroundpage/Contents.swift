@@ -17,5 +17,4 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 }
 
 let input = [3, 2, 4]
-
 print(twoSum(input, 6))
