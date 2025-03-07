@@ -3,7 +3,7 @@
 //
 //  Created by Harshvardhan Arora on 07/03/2025.
 //
-// https://leetcode.com/problems/two-sum/description/
+// https://leetcode.com/problems/two-sum/
 //
 
 import Foundation
