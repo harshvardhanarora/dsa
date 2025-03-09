@@ -3,7 +3,7 @@
 //
 //  Created by Harshvardhan Arora on 07/03/2025.
 //
-// https://leetcode.com/problems/palindrome-number/
+//  https://leetcode.com/problems/palindrome-number/
 //
 
 func isPalindrome_1(_ x: Int) -> Bool {

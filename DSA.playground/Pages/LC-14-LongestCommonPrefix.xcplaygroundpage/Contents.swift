@@ -3,7 +3,7 @@
 //
 //  Created by Harshvardhan Arora on 07/03/2025.
 //
-// https://leetcode.com/problems/longest-common-prefix/
+//  https://leetcode.com/problems/longest-common-prefix/
 //
 
 func longestCommonPrefix(_ strs: [String]) -> String {
