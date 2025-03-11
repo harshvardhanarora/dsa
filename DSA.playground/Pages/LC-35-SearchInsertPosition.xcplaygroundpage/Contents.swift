@@ -51,3 +51,6 @@ let nums = [1, 4, 6, 8]
 let target = 9
 
 print(searchInsert_1(nums, target) == 4)
+
+let text = "abca"
+print(text[0..<2])
