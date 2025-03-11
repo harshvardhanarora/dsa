@@ -6,12 +6,12 @@
 //  https://leetcode.com/problems/merge-two-sorted-lists/
 //
 
-func mergeTwoLists(_ list1: LinkedList?, _ list2: LinkedList?) -> LinkedList? {
+func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
     if list1 == nil && list2 == nil {
         return nil
     }
 
-    var outputHead: LinkedList?
+    var outputHead: ListNode?
     var currentNode = outputHead
     var l1Head = list1
     var l2Head = list2
@@ -19,10 +19,10 @@ func mergeTwoLists(_ list1: LinkedList?, _ list2: LinkedList?) -> LinkedList? {
     while(l1Head != nil || l2Head != nil) {
         if l1Head == nil {
             if currentNode == nil {
-                currentNode = LinkedList(l2Head!.value)
+                currentNode = ListNode(l2Head!.value)
                 outputHead = currentNode
             } else {
-                currentNode!.next = LinkedList(l2Head!.value)
+                currentNode!.next = ListNode(l2Head!.value)
                 currentNode = currentNode!.next
             }
 
@@ -32,10 +32,10 @@ func mergeTwoLists(_ list1: LinkedList?, _ list2: LinkedList?) -> LinkedList? {
 
         if l2Head == nil {
             if currentNode == nil {
-                currentNode = LinkedList(l1Head!.value)
+                currentNode = ListNode(l1Head!.value)
                 outputHead = currentNode
             } else {
-                currentNode!.next = LinkedList(l1Head!.value)
+                currentNode!.next = ListNode(l1Head!.value)
                 currentNode = currentNode!.next
             }
             l1Head = l1Head!.next
@@ -44,10 +44,10 @@ func mergeTwoLists(_ list1: LinkedList?, _ list2: LinkedList?) -> LinkedList? {
 
         if l1Head!.value <= l2Head!.value {
             if currentNode == nil {
-                currentNode = LinkedList(l1Head!.value)
+                currentNode = ListNode(l1Head!.value)
                 outputHead = currentNode
             } else {
-                currentNode!.next = LinkedList(l1Head!.value)
+                currentNode!.next = ListNode(l1Head!.value)
                 currentNode = currentNode!.next
             }
 
@@ -55,10 +55,10 @@ func mergeTwoLists(_ list1: LinkedList?, _ list2: LinkedList?) -> LinkedList? {
             continue
         } else {
             if currentNode == nil {
-                currentNode = LinkedList(l2Head!.value)
+                currentNode = ListNode(l2Head!.value)
                 outputHead = currentNode
             } else {
-                currentNode!.next = LinkedList(l2Head!.value)
+                currentNode!.next = ListNode(l2Head!.value)
                 currentNode = currentNode!.next
             }
 

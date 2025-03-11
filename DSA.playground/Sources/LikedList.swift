@@ -1,14 +1,14 @@
 //
-//  LinkedList.swift
+//  ListNode.swift
 //
 //  Created by Harshvardhan Arora on 09/03/2025.
 //
 
-public class LinkedList {
+public class ListNode {
     public var value: Int
-    public var next: LinkedList?
+    public var next: ListNode?
 
-    public init(_ value: Int, next: LinkedList? = nil) {
+    public init(_ value: Int, next: ListNode? = nil) {
         self.value = value
         self.next = next
     }
