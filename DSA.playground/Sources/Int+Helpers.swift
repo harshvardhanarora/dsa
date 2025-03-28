@@ -17,4 +17,9 @@ extension Int {
 
         return reversedNumber
     }
+
+    public var characterForInt: Character {
+        let startingValue = Int(("A" as UnicodeScalar).value)
+        return Character(UnicodeScalar(startingValue + self - 1)!)
+    }
 }
